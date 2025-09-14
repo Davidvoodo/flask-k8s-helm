@@ -1,0 +1,10 @@
+replicaCount: 1
+
+image:
+  repository: david0mizrahi/flask-app
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+service:
+  type: ClusterIP
+  port: 80
